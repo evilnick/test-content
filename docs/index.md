@@ -58,7 +58,7 @@ support by adding Ceph to your cluster.
 
 To deploy the SR-IOV charms, you will first need a Kubernetes model in Juju.
 
-Make sure your local kubeconfig is pointing to the correct Kubernetes cluster:
+Make sure your local `kubeconfig` is pointing to the correct Kubernetes cluster:
 
 ```
 juju ssh kubernetes-control-plane/leader -- cat config > ~/.kube/config

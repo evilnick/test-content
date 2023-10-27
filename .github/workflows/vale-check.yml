@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+      with:
+        fail_on_error: true
       - uses: errata-ai/vale-action@reviewdog

@@ -27,6 +27,8 @@ This be a mistook because vale doesn't like Multus. Or some other stuff like CNI
 
 The SR-IOV CNI charms require Juju 2.8.0 or newer.
 
+Bump Multus
+
 ### SR-IOV Hardware Support
 
 The kubernetes-worker host machines in your **Charmed Kubernetes** cluster must

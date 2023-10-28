@@ -15,7 +15,6 @@ jobs:
         - name: Install styles
           run: |
             set -eu
-            echo $GITHUB_ACTION_PATH
             ls -al
         - name: Run Vale tests
           uses: errata-ai/vale-action@reviewdog

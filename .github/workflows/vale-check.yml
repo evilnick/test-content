@@ -12,8 +12,6 @@ jobs:
             set -eu
             echo $GITHUB_ACTION_PATH
           shell: bash
-          env:
-          TEMPDIR: ${{ runner.temp }}
         - uses: actions/checkout@v3
         - uses: errata-ai/vale-action@reviewdog
           with:

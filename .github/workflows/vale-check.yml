@@ -15,7 +15,8 @@ jobs:
         - name: Install styles
           run: |
             set -eu
-            ls -al
+            cp styles/Headings.yaml .github/styles/
+            cp -f styles/vale.ini.runner .vale.ini
         - name: Run Vale tests
           uses: errata-ai/vale-action@reviewdog
           with:

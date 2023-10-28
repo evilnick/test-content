@@ -3,17 +3,21 @@ on: [pull_request, workflow_dispatch]
 
 jobs:
   vale:
-    name: runner / vale
+    name: Style checker
     runs-on: ubuntu-22.04
     defaults:
-      steps:
+        run:
+            shell: bash
+            working-directory: ./scripts
+    steps:
+        - name: Checkout repo to runner
+          uses: actions/checkout@v3
         - name: Install styles
           run: |
             set -eu
             echo $GITHUB_ACTION_PATH
-          shell: bash
-        - uses: actions/checkout@v3
-        - uses: errata-ai/vale-action@reviewdog
+        - name: Run Vale tests
+          uses: errata-ai/vale-action@reviewdog
           with:
             files: ./docs
             fail_on_error: true

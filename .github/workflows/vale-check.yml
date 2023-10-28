@@ -15,8 +15,8 @@ jobs:
         - name: Install styles
           run: |
             set -eu
-            mkdir .github/styles
-            cp styles/Headings.yml .github/styles/
+            mkdir -p .github/styles/Canonical
+            cp styles/*.yml .github/styles/Canonical
             cp -f styles/vale.ini.runner .vale.ini
         - name: Run Vale tests
           uses: errata-ai/vale-action@reviewdog

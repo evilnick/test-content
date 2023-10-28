@@ -2,4 +2,5 @@ StylesPath = .github/styles
 MinAlertLevel = suggestion
 
 [*.md]
-BasedOnStyles = Headings
+
+BasedOnStyles = Canonical

@@ -15,6 +15,7 @@ jobs:
         - name: Install styles
           run: |
             set -eu
+            mkdir .github/styles
             cp styles/Headings.yml .github/styles/
             cp -f styles/vale.ini.runner .vale.ini
         - name: Run Vale tests

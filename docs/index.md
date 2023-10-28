@@ -36,7 +36,7 @@ have attached network interface cards that support SR-IOV. While you will be
 attaching Virtual Functions to pods, the Physical Functions **must** be present
 on the hosts as well.
 
-### CNI providers
+### CNI providers.
 
 SR-IOV CNI is not a replacement for other CNI providers. Your
 **Charmed Kubernetes** deployment must include at least one of the base CNI

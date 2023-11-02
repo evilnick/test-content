@@ -15,6 +15,7 @@ jobs:
         - name: Install styles
           run: |
             set -eu
+            echo ${{ github.action_path }}
             mkdir -p .github/styles/Canonical
             cp styles/*.yml .github/styles/Canonical
             cp -f styles/vale.ini.runner .vale.ini

@@ -19,7 +19,7 @@ pods. SR-IOV support is provided by the sriov-cni and
 sriov-network-device-plugin charms, which must be deployed into a Kubernetes
 model in Juju.
 
-This be a mistook because vale doesn't like Multus. Or some other stuff like CNI probably
+This be a mistook because vale doesn't like Multus. Or some other stuff like CNI probably.
 
 ## Requirements
 

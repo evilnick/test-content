@@ -19,11 +19,15 @@ pods. SR-IOV support is provided by the sriov-cni and
 sriov-network-device-plugin charms, which must be deployed into a Kubernetes
 model in Juju.
 
+This be a mistook because vale doesn't like Multus. Or some other stuff like CNI probably.
+
 ## Requirements
 
 ### Juju 2.8.0
 
 The SR-IOV CNI charms require Juju 2.8.0 or newer.
+
+Bump Multus again
 
 ### SR-IOV Hardware Support
 
@@ -32,7 +36,7 @@ have attached network interface cards that support SR-IOV. While you will be
 attaching Virtual Functions to pods, the Physical Functions **must** be present
 on the hosts as well.
 
-### CNI providers
+### CNI providers.
 
 SR-IOV CNI is not a replacement for other CNI providers. Your
 **Charmed Kubernetes** deployment must include at least one of the base CNI
@@ -58,7 +62,7 @@ support by adding Ceph to your cluster.
 
 To deploy the SR-IOV charms, you will first need a Kubernetes model in Juju.
 
-Make sure your local kubeconfig is pointing to the correct Kubernetes cluster:
+Make sure your local `kubeconfig` is pointing to the correct Kubernetes cluster:
 
 ```
 juju ssh kubernetes-control-plane/leader -- cat config > ~/.kube/config
